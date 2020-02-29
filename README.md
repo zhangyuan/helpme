@@ -1,1 +1,1 @@
-# shadowsocks-server
+# Help me!
