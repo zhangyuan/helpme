@@ -1,0 +1,13 @@
+version: '3'
+services:
+    minio:
+        image: minio/minio
+        volumes: 
+            - ./data/minio:/data
+        ports: 
+            - 9000:9000
+        command: ["server", "/data"]
+        environment: 
+            - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY:-minioadmin}
+            - MINIO_SECRET_KEY=${MINIO_SECRET_KEY:-minioadmin}
+        restart: unless-stopped
