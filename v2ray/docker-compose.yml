@@ -1,0 +1,6 @@
+version: "3"
+services: 
+  v2ray:
+    image: v2ray/official
+    volumes: 
+      ./config/config.json:/etc/v2ray/config.json
