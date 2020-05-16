@@ -3,4 +3,4 @@ services:
   v2ray:
     image: v2ray/official
     volumes: 
-      ./config/config.json:/etc/v2ray/config.json
+      - ./config/config.json:/etc/v2ray/config.json
