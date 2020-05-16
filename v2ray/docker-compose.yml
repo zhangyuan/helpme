@@ -3,7 +3,12 @@ services:
   v2ray:
     image: v2ray/official
     volumes: 
-      - ./config/config.json:/etc/v2ray/config.json
+      - ./config/v2ray.json:/etc/v2ray/config.json
     ports: 
-      - ${V2RAY_PORT:-10086}:10086
-      - ${V2RAY_PORT:-10086}:10086/udp
+      - ${V2RAY_PORT:-18888}:10086
+  mkcp:
+    image: v2ray/official
+    volumes: 
+      - ./config/mkcp.json:/etc/v2ray/config.json
+    ports:
+      - ${MKCP_PORT:-18887}:10086/udp      
