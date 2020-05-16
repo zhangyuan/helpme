@@ -21,3 +21,17 @@ src/gz openwrt_packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19
 src/gz openwrt_routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.2/packages/x86_64/routing
 src/gz openwrt_telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.2/packages/x86_64/telephony 
 ```
+
+## 常用软件
+
+### shadowsocks
+
+https://github.com/shadowsocks/luci-app-shadowsocks
+
+### kcptun
+
+https://github.com/kuoruan/luci-app-kcptun
+
+### v2ray
+
+https://github.com/kuoruan/luci-app-v2ray
