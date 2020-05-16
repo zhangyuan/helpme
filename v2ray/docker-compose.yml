@@ -6,3 +6,4 @@ services:
       - ./config/config.json:/etc/v2ray/config.json
     ports: 
       - ${V2RAY_PORT:-10086}:10086
+      - ${V2RAY_PORT:-10086}:10086/udp
