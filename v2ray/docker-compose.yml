@@ -11,4 +11,4 @@ services:
     volumes: 
       - ./config/mkcp.json:/etc/v2ray/config.json
     ports:
-      - ${MKCP_PORT:-18887}:10086/udp      
+      - ${MKCP_PORT:-18887}:10086/udp
