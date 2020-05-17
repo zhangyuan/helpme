@@ -5,8 +5,10 @@ services:
     environment:
       - METHOD=aes-256-cfb
       - PASSWORD=${SS_PASSWORD}
+    ports: 
+      - "${SS_PORT:-8388}:8388"
   kcptun:
     image: xtaci/kcptun
     command: sh -c 'server -t "shadowsocks:8388" -l ":4000" --mode fast3 --key ${KCPTUN_KEY} -sockbuf 16777217 -dscp 46 --crypt aes-192'
     ports: 
-      - "4000:4000/udp"
+      - "{KCPTUN_PORT:-4000}:4000/udp"
