@@ -19,3 +19,14 @@ deb http://security.debian.org/ buster/updates main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/armbian buster main buster-utils buster-desktop
 ```
 
+## Install mosquitto
+
+```
+apt-get install mosquitto mosquitto-clients
+```
+
+Check the status
+
+```
+systemctl status mosquitto
+```
