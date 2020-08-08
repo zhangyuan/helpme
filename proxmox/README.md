@@ -54,6 +54,10 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 #### Install the Driver
 
+```
+apt install git pve-headers
+```
+
 https://github.com/brektrou/rtl8821CU
 
 
