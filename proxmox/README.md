@@ -16,7 +16,7 @@ apt-get install wireless-tools
 
 ## Setup Wireless Driver
 
-### Find the use devices
+### Find the usb devices
 
 List the USB devices.
 
