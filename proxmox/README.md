@@ -8,13 +8,14 @@ https://pve.proxmox.com/wiki/Package_Repositories
 qm importdisk <vmid> yourimage.qcow2 namestoragepool
 ```
 
-## Install Wireless Tools
+## Setup Wireless
+
+### Install Wireless Tools
 
 ```
 apt-get install wireless-tools
 ```
 
-## Setup Wireless Driver
 
 ### Find the usb devices
 
@@ -52,13 +53,17 @@ Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 
-#### Install the Driver
+### Install the Driver
 
 ```
 apt install git pve-headers
 ```
 
 https://github.com/brektrou/rtl8821CU
+
+### Config WLAN
+
+https://pve.proxmox.com/wiki/WLAN
 
 
 
