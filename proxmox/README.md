@@ -10,6 +10,8 @@ qm importdisk <vmid> yourimage.qcow2 namestoragepool
 
 ## Setup Wireless
 
+(This only enable the host to be reachable by wireless IP.)
+
 ### Install Wireless Tools
 
 ```
@@ -68,6 +70,14 @@ https://github.com/brektrou/rtl8821CU
 ```
 iwconfig
 ```
+
+If the interface name `wlx(MACADDRESS)`, Run the following command and reboot:
+
+```
+ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
+```
+
+
 
 #### Add the interface
 
