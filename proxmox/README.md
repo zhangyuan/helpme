@@ -13,7 +13,7 @@ qm importdisk <vmid> yourimage.qcow2 namestoragepool
 ### Install Wireless Tools
 
 ```
-apt-get install wireless-tools
+apt-get install wireless-tools wpasupplicant net-tools
 ```
 
 
@@ -63,7 +63,27 @@ https://github.com/brektrou/rtl8821CU
 
 ### Config WLAN
 
-https://pve.proxmox.com/wiki/WLAN
+#### Find the interface name
 
+```
+iwconfig
+```
+
+#### Add the interface
+
+Open `/etc/network/interfaces` and append the configuration
+
+```
+auto {INTERFACE_NAME}
+iface {INTERFACE_NAME} inet dhcp
+           wpa-ssid {SSID}
+           wpa-psk {PASSWORD}
+```
+
+Enable the interface
+
+```
+ifup {INTERFACE_NAME}
+```
 
 
