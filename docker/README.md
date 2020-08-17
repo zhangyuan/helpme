@@ -6,6 +6,17 @@
 
 ## 修改配置
 
+### Debian
+
+修改配置
+
+```
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"],
+  "data-root": "/mnt/data/docker"
+}
+```
+
 ### Ubuntu（使用Snap安装）
 
 如果docker是通过snap安装的，那么修改 `/var/snap/docker/current/config/daemon.json` 文件，添加 registry，例如：
@@ -35,4 +46,10 @@ sudo snap restart docker.dockerd
   ],
   "experimental" : true
 }
+```
+
+检查
+
+```
+docker info
 ```
