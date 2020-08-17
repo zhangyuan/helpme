@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     jellyfin:
-        image: jellyfin/jellyfin
+        image: jellyfin/jellyfin:10.6.3
         volumes: 
             - ./data/jellyfin/config:/config
             - ./data/jellyfin/cache:/cache
