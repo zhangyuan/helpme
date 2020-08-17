@@ -8,7 +8,7 @@
 
 ### Debian
 
-修改配置
+修改配置 /etc/docker/daemon.json
 
 ```
 {
