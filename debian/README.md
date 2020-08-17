@@ -73,3 +73,13 @@ UUID=5a82e561-724c-4af7-9d89-7f7e4028353d /mnt/data    auto nosuid,nodev,nofail,
 ```
 mount -a
 ```
+
+## 安装其它工具
+
+```
+apt-get install samba aria2
+```
+
+groupadd data其它
+groupadd data工具
+groupadd data
