@@ -43,16 +43,15 @@ fdisk /dev/sdb
 mkfs -t ext4 /dev/sdb
 ```
 
-创建挂载点
+创建挂载点并添加组权限
 
 ``
 mkdir /mnt/data
-```
-
-添加权限
-
-``
 groupadd data
+chgrp data /mnt/data/
+chmod g+w /mnt/data
+chmod g+x /mnt/data
+
 usermod -aG data {username}
 ```
 
@@ -74,12 +73,9 @@ UUID=5a82e561-724c-4af7-9d89-7f7e4028353d /mnt/data    auto nosuid,nodev,nofail,
 mount -a
 ```
 
-## 安装其它工具
+## Samba
 
 ```
-apt-get install samba aria2
+apt-get install samba
 ```
 
-groupadd data其它
-groupadd data工具
-groupadd data
