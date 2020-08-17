@@ -6,7 +6,7 @@ services:
             - ./data/jellyfin/config:/config
             - ./data/jellyfin/cache:/cache
             - type: bind
-              source: /shared/media
+              source: /mnt/data/shared/media
               target: /media
         user: 1000:1000
         network_mode: host
