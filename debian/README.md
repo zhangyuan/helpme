@@ -79,3 +79,16 @@ mount -a
 apt-get install samba
 ```
 
+配置 /etc/samba/smb.conf
+
+```
+[shared]
+	path=/mnt/data/shared
+	public=yes
+	browseable=yes
+	writable=yes
+	create mask=0644
+	directory mask=0755
+```
+
+
