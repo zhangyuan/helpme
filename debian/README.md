@@ -39,13 +39,14 @@ fdisk /dev/sdb
 ```
 
 格式化
+
 ```
 mkfs -t ext4 /dev/sdb
 ```
 
 创建挂载点并添加组权限
 
-``
+```
 mkdir /mnt/data
 groupadd data
 chgrp data /mnt/data/
