@@ -88,8 +88,8 @@ apt-get install samba
 	public=yes
 	browseable=yes
 	writable=yes
-	create mask=0644
-	directory mask=0755
+	create mask=0666
+	directory mask=0777
 ```
 
 
