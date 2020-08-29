@@ -67,6 +67,8 @@ https://github.com/shadowsocks/luci-app-shadowsocks
 
 https://github.com/kuoruan/luci-app-kcptun
 
+`luci-lib-ipkg` may be required.
+
 ### v2ray
 
 https://github.com/kuoruan/luci-app-v2ray
