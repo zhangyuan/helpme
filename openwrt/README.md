@@ -63,6 +63,8 @@ opkg install luci-app-shadowsocks-libev
 
 https://github.com/shadowsocks/luci-app-shadowsocks
 
+To fix DNS, add DHCP-Options `6,8.8.8.8,8.8.4.4` for the network interface.
+
 ### kcptun
 
 https://github.com/kuoruan/luci-app-kcptun
