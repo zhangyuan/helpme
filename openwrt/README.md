@@ -70,3 +70,12 @@ https://github.com/kuoruan/luci-app-kcptun
 ### v2ray
 
 https://github.com/kuoruan/luci-app-v2ray
+
+## 查看日志
+
+```
+logread
+```
+
+https://openwrt.org/docs/guide-user/base-system/log.essentials
+
