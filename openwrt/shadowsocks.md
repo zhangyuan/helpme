@@ -65,13 +65,17 @@ opkg install luci-lib-ipkg
 3. 创建指向本地 Kcptun 服务器的远程服务器（Remote Server），即 127.0.0.1 的 12000 端口，用于 TCP 连接。假定名字为 `tcp_server`。
 4. 创建本地实例 ss_redir，模式为 `tcp_and_udp`，远程服务器为 `tcp_and_udp_server`。
 5. 创建本地实例 ss_redir，模式为 `tcp_only`，远程服务器为 `tcp_server`。
-6. 配置 Redir Rules。将 `ss-redir for TCP`配置为 `tcp_server`，ss-redir for UDP` 配置为 `tcp_and_udp_server`。其它按需配置
+6. 配置 Redir Rules。将 `ss-redir for TCP`配置为 `tcp_server`，ss-redir for UDP` 配置为 `tcp_and_udp_server`。其它按需配置。
 
 配置DNS，使所有的DNS请求都转发到Google的DNS服务器。
 
 1. 创建本地实例 ss_tunnel，模式为 `tcp_and_udp`，远程服务器为 `tcp_and_udp_server`。本地端口为 `53`，隧道地址为 `8.8.8.8:53`。
 2. 修改 Dnsmasq 的端口为其它端口。在 `NetWork` - `DHCP and DNS` - `Server Settings` 中，修改 `DNS server port` 为其它端口。
-` 
+
+
+保存配置并应用。
+
+
 
 
 
