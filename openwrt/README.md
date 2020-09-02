@@ -18,9 +18,9 @@ src/gz openwrt_telephony http://downloads.openwrt.org/releases/19.07.3/packages/
 
 ### 国内镜像
 
-（注意架构，下面是 x86_64 架构）
-
 #### HTTP
+
+将 `http://downloads.openwrt.org` 替换为 `http://mirrors.tuna.tsinghua.edu.cn/openwrt`。注意不同架构的地址不同。比如：
 
 ```
 src/gz openwrt_core http://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/targets/ramips/mt76x8/packages
@@ -32,6 +32,12 @@ src/gz openwrt_routing http://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.0
 src/gz openwrt_telephony http://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/packages/mipsel_24kc/telephony
 ```
 
+更新软件源
+
+```
+opkg update
+```
+
 #### HTTPS
 
 下载 HTTPS 相关的 软件包
@@ -40,7 +46,7 @@ src/gz openwrt_telephony http://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19
 opkg install wget ca-certificates libustream-openssl
 ```
 
-更新软件源 
+更新软件源地址
 
 ```
 src/gz openwrt_core https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/targets/ramips/mt76x8/packages
@@ -50,6 +56,12 @@ src/gz openwrt_luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.
 src/gz openwrt_packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/packages/mipsel_24kc/packages
 src/gz openwrt_routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/packages/mipsel_24kc/routing
 src/gz openwrt_telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/19.07.3/packages/mipsel_24kc/telephony
+```
+
+更新软件源
+
+```
+opkg update
 ```
 
 ## 常用软件
