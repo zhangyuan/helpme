@@ -90,6 +90,7 @@ apt-get install samba
 	writable=yes
 	create mask=0666
 	directory mask=0777
+        force group = data
 ```
 
 
