@@ -26,3 +26,15 @@ cp config/v2ray.example.json config/v2ray.json && sed -i 's/00000000000000000000
 
 cp config/mkcp.example.json config/mkcp.json && sed -i 's/00000000000000000000/6a11cd68-7e42-11eb-9ef3-acde48001122/g' config/mkcp.json
 ```
+
+## 运行
+
+```bash
+docker-compose up -d
+```
+
+确保docker容器已经运行
+
+```bash
+docker ps
+```
