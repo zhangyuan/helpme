@@ -2,7 +2,7 @@
 
 set -e
 
-CLIENT_ID=$(python -c 'import uuid; print(str(uuid.uuid1()))')
+CLIENT_ID=$(python3 -c 'import uuid; print(str(uuid.uuid1()))')
 
 cp config/v2ray.example.json config/v2ray.json
 cp config/mkcp.example.json config/mkcp.json
